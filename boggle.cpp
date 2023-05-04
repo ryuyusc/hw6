@@ -95,5 +95,11 @@ bool boggleHelper(const std::set<std::string>& dict, const std::set<std::string>
 								   std::string word, std::set<std::string>& result, unsigned int r, unsigned int c, int dr, int dc)
 {
 //add your solution here!
+  //checks if is valid prefix
+
+  bool status = boggleHelper(dict, prefix, board, word, result, r + dr, c + dc, dr, dc);
+  if (status) {
+
+  }
 
 }
